@@ -6,9 +6,9 @@ const Review = (props) => {
 
     return (
         <div style={{ margin:'30px', border:'1px solid grey'}}>
-            <img style={{width:'100%' }} src={img} alt="" />
+            <img style={{width:'100%' , borderRadius:'50%' }} src={img} alt="" />
             <div style={{ padding:'5px'}} >
-            <h4>Name:{name}</h4>
+            <h4>Reviewer:{name}</h4>
             <p>Review: {review}</p>
             <h5>Rating: {rating}</h5>
             </div>

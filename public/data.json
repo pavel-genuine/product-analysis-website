@@ -4,41 +4,41 @@
         "name": "Mr. John",
         "img": "https://img.freepik.com/free-photo/handsome-businessman-suit-glasses-cross-arms-chest-look_176420-21750.jpg?w=1060&t=st=1649009515~exp=1649010115~hmac=f266ed2a344cf727aa2a5216f38f64940d6b8ecf95fbe48ad94e03170c3c12c2",
         "review": "ABC",
-        "ratng": 4
+        "rating": 4
     },
     {
         "id": 2,
         "name": "Mr. James",
         "img": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?w=1060&t=st=1649009519~exp=1649010119~hmac=13fa46311091be2f26ce370a1e60cc9f3b01d52494dbba3016e96a80e89bdb22",
         "review": "ABC",
-        "ratng": 5
+        "rating": 5
     },
     {
         "id": 3,
         "name": "Mr. Alex",
         "img": "https://img.freepik.com/free-photo/surprised-amused-good-looking-man-with-beard-open-mouth-fascinated-raise-eyebrows-wondered-enjoy-playing-amusement-park-pointing-fingers-left-astonished-with-amazing-promo-white-wall_176420-37055.jpg?w=1060&t=st=1649009526~exp=1649010126~hmac=772aa842438f17dd6160f95ad694833b5fdbd3805a6417eb681e78666d62ecdc",
         "review": "ABC",
-        "ratng": 5
+        "rating": 5
     },
     {
         "id": 4,
         "name": "Mr. Joseph",
         "img": "https://img.freepik.com/free-photo/portrait-handsome-european-male-student-has-gentle-smile-face-happy-hear-pleasant-news-stands-delighted-wears-round-spectacles-orange-jumper_273609-45004.jpg?w=1060&t=st=1649009530~exp=1649010130~hmac=97143afcd90326d6a2e7cd5546e1cc5dc3e728ae1a5543e8e029250d06a9b4a1",
         "review": "ABC",
-        "ratng": 4.5
+        "rating": 4.5
     },
     {
         "id": 5,
         "name": "Mr. Noah",
         "img": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072214.jpg?w=1060&t=st=1649009536~exp=1649010136~hmac=e9f909002230ee07f02b872f47e6671e35cf62a98f0cc109fb4df5c131efd10f",
         "review": "ABC",
-        "ratng": 4.5
+        "rating": 4.5
     },
     {
         "id": 6,
         "name": "Mr. Kavin",
         "img": "https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?w=740&t=st=1649009517~exp=1649010117~hmac=87bacc657cf01c4ba3363627b4e2b0463f507e80f4f41ec299160ace038e2bdc",
         "review": "ABC",
-        "ratng": 4
+        "rating": 4
     }
 ]
