@@ -15,7 +15,7 @@ const ReviewsTab = () => {
     },[])
 
     return (
-        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr'}} >
+        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr' , margin:'20px 100px'}} >
            
             {
                 reviews.map(review=><Review key={review.id} review={review}></Review>)

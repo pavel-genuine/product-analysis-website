@@ -25,7 +25,7 @@ const Reviews = () => {
            }
 
          
-           <Link to='/reviews'> <button style={{backgroundColor:'green', padding:'10px', color:'white', border:'0'}} >All Reviews</button></Link>
+           <Link to='/reviews'> <button style={{backgroundColor:'green', padding:'10px', color:'white', border:'0', cursor:'pointer', fontWeight:'bold' }} >All Reviews >>></button></Link>
            
            
        </div>

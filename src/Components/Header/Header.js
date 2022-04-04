@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomLink from '../CustomLink/CustomLink';
 
+
 const Header = () => {
     return (
         <div style={{display:'flex', justifyContent:'space-around', alignItems:'center', margin:'20px 550px'}}>
