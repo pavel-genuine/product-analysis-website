@@ -15,30 +15,46 @@ const Dashboard = () => {
     return (
       
        
-            <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', margin:'100px'}}>
-                <BarChart width={700} height={400} data={data}>
+            <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr', margin:' 50px 100px'}}>
+              <div>
+              <h3 style={{textAlign:'center', color:'#82ca9d'}}>Bar Chart of Investment Vs Revenue Vs Sell</h3>
+                <BarChart title="Chart of PU x UV" width={400} height={300} data={data}>
+                
               <XAxis dataKey="month" stroke="#8884d8" />
               <YAxis />
               <Tooltip wrapperStyle={{ width: 100, backgroundColor: '#ccc' }} />
-              <Legend  width={100} wrapperStyle={{ top: 40, right: 20, backgroundColor: '#f5f5f5', border: '1px solid #d5d5d5', borderRadius: 3, lineHeight: '40px' }} />
               <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
               
+             <Bar dataKey="sell" stackId="a" fill="#ffc658" />
              <Bar dataKey="investment" stackId="a" fill="#8884d8" />
              <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
+             <Legend   style={{ buttom: 0, right: 0 }} />
+
             </BarChart>
+              </div>
 
 
             
-        <PieChart width={400} height={400}>
+        <div>
+        <h3 style={{textAlign:'center', color:'#82ca9d'}}>Pie Chart of Investment Vs Revenue Vs Sell</h3>
+
+        <PieChart width={600} height={350}>
         <Tooltip wrapperStyle={{ width: 100, backgroundColor: '#ccc' }} />
-          <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
-          <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+        <Pie data={data} dataKey="sell" cx="50%" cy="50%" innerRadius={100} fill="#8884d8" label />
+
+          <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#82ca9d" />
+          <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#ffc658" label />
         </PieChart>
 
+        </div>
 
-        <AreaChart
-          width={500}
-          height={400}
+
+       <div>
+       <h3 style={{textAlign:'center', color:'#82ca9d'}}>Area Chart of Investment Vs Revenue Vs Sell</h3>
+
+       <AreaChart
+          width={400}
+          height={300}
           data={data}
           margin={{
             top: 10,
@@ -56,8 +72,10 @@ const Dashboard = () => {
           <Area type="monotone" dataKey="investment" stackId="1" stroke="#8884d8" fill="#8884d8" />
           
           <Area type="monotone" dataKey="sell" stackId="1" stroke="#ffc658" fill="#ffc658" />
-        
+          <Legend   style={{ buttom: 0, right: 0 }} />
+
         </AreaChart>
+       </div>
   
             </div>
           
