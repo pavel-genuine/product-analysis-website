@@ -11,7 +11,7 @@ const Features = () => {
             <div className='features'>
             <img src={img} alt="" />
 
-            <div style={{marginLeft:'20px'}}>
+            <div style={{margin:'0 20px'}}>
                 <h1>2022 Toyota Corolla Cross</h1>
                 <p>This is the place for Toyota enthusiasts. Keep up-to-date with the latest news on everything Toyota. Explore our series of informative articles, new car reviews and tips on how to get the most out of your Toyota.</p>
               <Link to='/dashboard'> <button className='hover-btn'>Show Demo</button> </Link>
