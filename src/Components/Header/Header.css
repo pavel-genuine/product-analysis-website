@@ -10,6 +10,9 @@
 
 @media only screen and (max-width: 688px) {
     .header{
-        display: none;
+       display: flex;
+       flex-direction: column;
+       margin: 10px;
+    
     }
 }

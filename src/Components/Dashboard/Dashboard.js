@@ -18,8 +18,8 @@ const Dashboard = () => {
        
             <div className='dash-board'>
               <div>
-              <h3 style={{textAlign:'center', color:'#82ca9d'}}>Bar Chart of Investment Vs Revenue Vs Sell</h3>
-                <BarChart title="Chart of PU x UV" width={400} height={300} data={data}>
+              <h5 style={{ color:'#82ca9d'}}>Bar Chart of Investment Vs Revenue Vs Sell</h5>
+                <BarChart className='bar' title="Chart of PU x UV" width={300} height={300} data={data}>
                 
               <XAxis dataKey="month" stroke="#8884d8" />
               <YAxis />
@@ -37,9 +37,9 @@ const Dashboard = () => {
 
             
         <div>
-        <h3 style={{textAlign:'center', color:'#82ca9d'}}>Pie Chart of Investment Vs Revenue Vs Sell</h3>
+        <h5 style={{color:'#82ca9d'}}>Pie Chart of Investment Vs Revenue Vs Sell</h5>
 
-        <PieChart width={600} height={350}>
+        <PieChart width={300} height={350}>
         <Tooltip wrapperStyle={{ width: 100, backgroundColor: '#ccc' }} />
         <Pie data={data} dataKey="sell" cx="50%" cy="50%" innerRadius={100} fill="#8884d8" label />
 
@@ -51,10 +51,10 @@ const Dashboard = () => {
 
 
        <div>
-       <h3 style={{textAlign:'center', color:'#82ca9d'}}>Area Chart of Investment Vs Revenue Vs Sell</h3>
+       <h5 style={{ color:'#82ca9d'}}>Area Chart of Investment Vs Revenue Vs Sell</h5>
 
        <AreaChart
-          width={400}
+          width={300}
           height={300}
           data={data}
           margin={{
