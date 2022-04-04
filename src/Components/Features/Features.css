@@ -17,3 +17,35 @@
     color: white;
 
 }
+
+img{
+    transition:.3s ease-in-out;
+ 
+}
+
+img:hover {
+    transform: scale(1.05);
+
+}
+
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px;
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 688px) {
+
+    .features{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    img{
+        width: 85%;
+
+    }
+
+}

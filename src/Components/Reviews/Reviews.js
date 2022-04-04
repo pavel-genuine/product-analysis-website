@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Review from '../Review/Review';
 import useReview from '../useReview/useReview';
+import './Reviews.css'
 
 const Reviews = () => {
 
@@ -11,7 +12,7 @@ const Reviews = () => {
     return (
         <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
             <h2 style={{textAlign:'center'}}>Reviews :</h2>
-            <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr', margin:'0 100px'}} >
+            <div className='reviews'  >
            
            {
                reviews.map(review=><Review key={review.id} review={review}></Review>).slice(0,3)

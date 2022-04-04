@@ -1,0 +1,16 @@
+.dash-board{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 100px;
+
+}
+
+@media only screen and (max-width: 688px) {
+    .dash-board{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 100px 20px;
+    
+    }
+}

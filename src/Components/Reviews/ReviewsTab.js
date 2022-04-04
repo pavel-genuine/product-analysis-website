@@ -2,16 +2,17 @@
 import React, { useEffect, useState } from 'react';
 import Review from '../Review/Review';
 import useReview from '../useReview/useReview';
+import './ReviewsTab.css'
 
 const ReviewsTab = () => {
 
     const [reviews, setReviews] = useReview()
 
     return (
-        <div>
+        <div style={{margin:'100px auto'}}>
             <h2 style={{textAlign:'center'}}>Reviews :</h2>
 
-          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr' , margin:'20px 100px'}} >
+          <div className='reviews'  >
    
           {
             reviews.map(review=><Review key={review.id} review={review}></Review>)

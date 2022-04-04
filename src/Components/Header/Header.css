@@ -1,0 +1,15 @@
+
+.header{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 550px;
+  
+    /* style={{display:'flex', justifyContent:'space-around', alignItems:'center', margin:'20px 550px'}} */
+}
+
+@media only screen and (max-width: 688px) {
+    .header{
+        display: none;
+    }
+}

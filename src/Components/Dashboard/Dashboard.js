@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import './Dashboard.css'
 
 const Dashboard = () => {
 
@@ -15,7 +16,7 @@ const Dashboard = () => {
     return (
       
        
-            <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr', margin:' 50px 100px'}}>
+            <div className='dash-board'>
               <div>
               <h3 style={{textAlign:'center', color:'#82ca9d'}}>Bar Chart of Investment Vs Revenue Vs Sell</h3>
                 <BarChart title="Chart of PU x UV" width={400} height={300} data={data}>
