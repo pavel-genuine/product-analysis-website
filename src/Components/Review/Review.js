@@ -1,11 +1,12 @@
 import React from 'react';
+import './Review.css'
 
 const Review = (props) => {
 
     const {name, img, review,rating}=props.review
 
     return (
-        <div style={{ margin:'30px', border:'1px solid grey', borderRadius:'5px', boxShadow:'5px 5px rgb(169, 14, 14)'}}>
+        <div className='review' >
             <img style={{width:'90%' ,border:'1px solid rgb(169, 14, 14)', borderRadius:'50%', margin:'20px' }} src={img} alt="" />
             <div style={{ padding:'10px'}} >
             <h4>Reviewer : {name}</h4>

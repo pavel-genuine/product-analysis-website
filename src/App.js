@@ -6,6 +6,7 @@ import ReviewsTab from './Components/Reviews/ReviewsTab';
 import Dashboard from './Components/Dashboard/Dashboard';
 import { useEffect } from 'react';
 import Blogs from './Blogs/Blogs'
+import NotFound from './Components/NotFound/NotFound'
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/reviews' element={<ReviewsTab></ReviewsTab>}></Route>
         <Route path='/dashboard' element={<Dashboard></Dashboard>} ></Route>
         <Route path='/blogs' element={<Blogs></Blogs>} ></Route>
+        <Route path='*' element={<NotFound></NotFound>} ></Route>
       </Routes>
       
 
