@@ -1,4 +1,4 @@
-.demo-btn{
+.hover-btn{
     background-color: white;
     color: rgb(169, 14, 14);
     border: 2px solid rgb(169, 14, 14) ;
@@ -7,10 +7,10 @@
    cursor: pointer;
    font-weight: bold;
    font-size: medium;
-   margin-top: 20px;
+   margin: 20px;
 }
 
-.demo-btn:hover{
+.hover-btn:hover{
 
     background-color:rgb(169, 14, 14);
 

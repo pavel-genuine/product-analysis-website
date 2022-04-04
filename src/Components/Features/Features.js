@@ -13,7 +13,7 @@ const Features = () => {
             <div>
                 <h1>2022 Toyota Corolla Cross</h1>
                 <p>This is the place for Toyota enthusiasts. Keep up-to-date with the latest news on everything Toyota. Explore our series of informative articles, new car reviews and tips on how to get the most out of your Toyota.</p>
-                <button className='demo-btn'>Show Demo</button>
+                <button className='hover-btn'>Show Demo</button>
             </div>
             </div>
         
