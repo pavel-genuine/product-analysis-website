@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import ReviewsTab from './Components/Reviews/ReviewsTab';
 import Dashboard from './Components/Dashboard/Dashboard';
 import { useEffect } from 'react';
-import Blogs from './Blogs/Blogs'
+import Blogs from './Components/Blogs/Blogs'
 import NotFound from './Components/NotFound/NotFound'
 
 function App() {

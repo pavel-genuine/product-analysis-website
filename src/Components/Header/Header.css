@@ -6,12 +6,48 @@
   margin: 20px 550px;
   
 }
+.fa-bar{
+  display: none;
+}
+#toggler{
+  display: none;
+}
 
 @media only screen and (max-width: 688px) {
+
+  .nav{
+    position: relative;
+  }
     .header{
-       display: flex;
-       flex-direction: column;
-       margin: 10px;
-    
+     
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: -600px;
+      transform: translatey(-300px);
+      transition: .2s ease-in;
+      background-color:rgba(129, 126, 126, 0.863);
+      width: 500px;
+      height: 120px;
+     
+      
     }
+
+    .fa-bar{
+    
+      z-index: 1;
+      display: block;
+      position: fixed;
+      top: 110px;
+      left: 25px;
+      transform: scale(1.5);
+    }
+
+    #toggler:checked~.header{
+
+      transform: translatey(-30px);
+
+    }
+
+  
 }
