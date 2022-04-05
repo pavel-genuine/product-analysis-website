@@ -11,7 +11,7 @@
     .dash-board{
         display: grid;
         grid-template-columns:1fr;
-        margin: 120px 20px;
+        margin: 120px 50px;
         z-index: -1;
         
        
