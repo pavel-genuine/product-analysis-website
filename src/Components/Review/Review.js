@@ -1,3 +1,5 @@
+import { faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Review.css'
 
@@ -12,7 +14,15 @@ const Review = (props) => {
             <h4 style={{margin:'2px'}}>Reviewer : {name}</h4>
             <h4 style={{margin:'2px'}}>Review :</h4>
             <p style={{margin:'2px'}} title={review.length<150?'':review} >{review.length<150? review:review.slice(0,150)+'...'}</p>
-            <h5 style={{margin:'10px 2px'}}>Rating : {rating}</h5>
+            
+            {rating===5?<React.Fragment><h5 style={{margin:'10px 2px'}}>Rating :</h5><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon></React.Fragment> :''}
+            
+            {rating===4?<React.Fragment><h5 style={{margin:'10px 2px'}}>Rating :</h5><FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon></React.Fragment> :''} 
+            
+            {rating===4.5?<React.Fragment><h5 style={{margin:'10px 2px'}}>Rating :</h5><FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon><FontAwesomeIcon icon={faStar}></FontAwesomeIcon> <FontAwesomeIcon icon={faStarHalf}></FontAwesomeIcon></React.Fragment> :''} 
             </div>
         </div>
     );
