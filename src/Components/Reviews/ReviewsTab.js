@@ -9,7 +9,7 @@ const ReviewsTab = () => {
     const [reviews, setReviews] = useReview()
 
     return (
-        <div style={{margin:'135px auto'}}>
+        <div style={{margin:'30px auto'}}>
             <h2 style={{textAlign:'center'}}>Reviews :</h2>
 
           <div className='reviews'  >

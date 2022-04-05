@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div style={{margin:' 140px 50px'}}>
+        <div style={{margin:'30px 50px 150px 50px'}}>
             <h2>Context API</h2>
             <p>Context API is powerful feature of react by using it data could be shared with other components unlike parent-children props drilling. In Props drilling data could be sent to direct children components only but context API is minimize this limitation ,now data could be share other not only children but also other components by this. 
                 createContext , useContext hooks are used for this feature. createContext returns provider and consumer.

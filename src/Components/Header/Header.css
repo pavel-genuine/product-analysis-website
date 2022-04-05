@@ -13,6 +13,11 @@
   display: none;
 }
 
+h2{
+  text-align:center;
+   margin-top:30px
+}
+
 @media only screen and (max-width: 688px) {
 
   .nav{
@@ -38,15 +43,20 @@
       z-index: 1;
       display: block;
       position: fixed;
-      top: 110px;
+      top: 50px;
       left: 25px;
       transform: scale(1.5);
     }
 
     #toggler:checked~.header{
 
-      transform: translatey(-30px);
+      transform: translatey(-150px);
 
+    }
+
+    h2{
+      text-align:center;
+       margin-top:130px
     }
 
   

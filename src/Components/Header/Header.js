@@ -10,9 +10,8 @@ import { faBars, } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
     return (
-       <div className='nav' >
-            <h2 style={{textAlign:'center'}}>Welcome To Review Master</h2>
-             
+       <div>
+         <div className='nav'>
              <label htmlFor="toggler">
                 <FontAwesomeIcon className='fa-bar' icon={faBars} />
             </label>
@@ -25,6 +24,9 @@ const Header = () => {
             <CustomLink to='/blogs'>BLOGS</CustomLink>
             
          </div>
+      </div>
+         <h2> Review Master</h2>
+
        </div>
     );
 };
