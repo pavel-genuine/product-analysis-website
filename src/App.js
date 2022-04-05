@@ -7,6 +7,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import { useEffect } from 'react';
 import Blogs from './Components/Blogs/Blogs'
 import NotFound from './Components/NotFound/NotFound'
+import Footer from './Components/Footer/Footer';
 
 function App() {
   useEffect(() => {
@@ -23,7 +24,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>} ></Route>
       </Routes>
       
-
+      <Footer></Footer>
     </div>
   );
 }
