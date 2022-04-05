@@ -10,9 +10,7 @@ import NotFound from './Components/NotFound/NotFound'
 import Footer from './Components/Footer/Footer';
 
 function App() {
-  useEffect(() => {
-    document.title = "Review Master"
- }, []);
+ 
   return (
     <div >
       <Header></Header>
